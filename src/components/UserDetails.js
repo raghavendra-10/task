@@ -11,18 +11,18 @@ const UserDetails = () => {
   }
   return (
     <div className='flex flex-col gap-10 h-screen'>
-      <div className='bg-blue-100 p-4 rounded-md h-1/4'>
+      <div className='bg-blue-100 p-4 rounded-lg h-1/4'>
         <Container maxWidth="md">
           <div className="flex items-center justify-center">
             <Avatar
               alt={username}
-              src="/path/to/your/dummy/profile/photo.jpg" 
+              src="/profile/photo.jpg" 
               style={{ width: '100px', height: '100px', marginRight: '16px' }}
             >
               <AccountCircleIcon style={{ fontSize: '70px' }} />
             </Avatar>
             <div>
-              <Typography variant="h4" gutterBottom>
+              <Typography variant="h5" gutterBottom>
                 User Details
               </Typography>
               <Typography variant="body1">
@@ -37,12 +37,12 @@ const UserDetails = () => {
 
       </div>
       <div className='flex h-24 gap-10'>
-        <div className='w-1/2  bg-blue-100'>No data found</div>
-        <div className='w-1/2 bg-blue-100'>No data found</div>
+        <div className='w-1/2 rounded-lg text-center  bg-blue-100'>No data found</div>
+        <div className='w-1/2 rounded-lg text-center bg-blue-100'>No data found</div>
       </div>
       <div className='flex h-24 gap-10'>
-        <div className='w-1/2  bg-blue-100'>No data found</div>
-        <div className='w-1/2 bg-blue-100'>No data found</div>
+        <div className='w-1/2 rounded-lg text-center  bg-blue-100'>No data found</div>
+        <div className='w-1/2 rounded-lg text-center bg-blue-100'>No data found</div>
       </div>
     </div>
   );
